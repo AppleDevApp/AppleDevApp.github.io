@@ -1236,6 +1236,16 @@ pre .javascript .function {
   font-weight: bold;
   line-height: 1;
 }
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
+}
 .post-sticky-flag {
   display: inline-block;
   font-size: 16px;
@@ -1688,21 +1698,6 @@ pre .javascript .function {
   display: inline-block;
   margin: 0.8em 2em 0 2em;
 }
-#wechat:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
-}
-#alipay:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
-}
-#bitcoin:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
-}
 @-moz-keyframes roll {
   from {
     -webkit-transform: rotateZ(30deg);
@@ -1766,6 +1761,13 @@ pre .javascript .function {
     -o-transform: rotateZ(-30deg);
     transform: rotateZ(-30deg);
   }
+}
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
 }
 .rtl.post-body p,
 .rtl.post-body a,
@@ -1948,7 +1950,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2039be;
+  background: #ff50c9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2621,6 +2623,19 @@ pre .javascript .function {
 .algolia-pagination .disabled-item {
   visibility: hidden;
 }
+#gitment-display-button {
+  display: inline-block;
+  padding: 0 15px;
+  color: #0a9caf;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #0a9caf;
+  border-radius: 4px;
+}
+#gitment-display-button:hover {
+  color: #fff;
+  background: #0a9caf;
+}
 .page-archive .archive-page-counter {
   position: relative;
   top: 3px;
@@ -2866,10 +2881,7 @@ hr {
   margin-top: 80px;
 }
 .header {
-  background: #f5f5f5;
-}
-.header-inner {
-  padding: 25px 0 20px;
+  background-image: url("../images/codehead.jpg");
 }
 .header-inner:before,
 .header-inner:after {
@@ -2882,14 +2894,12 @@ hr {
 @media (max-width: 767px) {
   .header-inner {
     width: auto;
-    margin-bottom: 50px;
-    padding: 10px;
   }
 }
 .site-meta {
-  float: left;
   margin-left: -20px;
   line-height: normal;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .site-meta {
@@ -2911,6 +2921,9 @@ hr {
 .site-meta .site-title {
   font-size: 22px;
   font-weight: bolder;
+  color: #f5f5f5;
+  line-height: 56px;
+  font-size: 48px;
 }
 @media (max-width: 767px) {
   .site-meta .site-title {
@@ -2949,12 +2962,14 @@ hr {
 .use-motion .logo-line-after i {
   right: -100%;
 }
+.menu {
+  background: rgba(255,255,255,0.65);
+}
+.menu .menu-item a {
+  font-size: 18px;
+}
 .site-subtitle {
   display: none;
-}
-.site-nav-toggle {
-  position: static;
-  float: right;
 }
 .menu {
   float: right;
@@ -3004,6 +3019,9 @@ hr {
   .menu {
     float: none;
   }
+}
+.btn-bar {
+  background: rgba(0,0,0,0.9);
 }
 .site-search form {
   display: none;
