@@ -1,0 +1,11 @@
+# AppleDevApp robots.txt
+User-agent: * Allow: /
+Allow: /archives/
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+Sitemap: https://appledevapp.github.io/sitemap.xml
+Sitemap: https://appledevapp.github.io/baidusitemap.xml
